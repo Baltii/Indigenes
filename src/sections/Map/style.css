@@ -1,0 +1,13 @@
+.map path{
+    fill: #272727;
+    stroke: #E3BF3E;
+    stroke-width: .7;
+}
+.map path:hover{
+    fill: #E3BF3E;
+    transition: 0.6s;
+    cursor: pointer;
+}
+span{
+    color: #E3BF3E;
+}
