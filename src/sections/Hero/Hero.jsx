@@ -14,12 +14,19 @@ import {
 import * as React from 'react'
 import { FaPlay } from 'react-icons/fa'
 import "../Map/style.css"
-import vid from "../../assets/video/cover.mp4"
+import vid from "../../assets/video/Ferrari.mp4"
 
 export const Hero = () => {
   return (
     <Box>
-      <Box as="section" bg="blackAlpha.700" color="white" py="7.5rem">
+      <video
+            overflow="hidden"
+            autoPlay
+            loop
+          >
+            <source src={vid} type="video/mp4"></source>
+          </video>
+      <Box as="section" bg="blackAlpha.700" color="white" py="10rem">
         <Box
           maxW={{
             base: 'xl',
@@ -31,7 +38,7 @@ export const Hero = () => {
             md: '8',
           }}
         >
-          <Box textAlign="center">
+          <Box textAlign="center" >
             <Heading
               as="h1"
               size="3xl"
@@ -74,17 +81,6 @@ export const Hero = () => {
               </Button>
             </LightMode>
           </Stack>
-
-          <video
-            cursor="pointer"
-            position="relative"
-            rounded="lg"
-            overflow="hidden"
-            autoPlay
-            loop
-          >
-            <source src={vid} type="video/mp4"></source>
-          </video>
           </Box>
         </Box>
       </Box>

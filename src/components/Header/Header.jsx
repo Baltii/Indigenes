@@ -16,6 +16,7 @@ export const Header = () => {
     <Box>
       <Box as="header" bg={mode('white', 'blackAlpha.700')} >
         <Box
+          backdropBlur={13}
           maxW="7xl"
           mx="auto"
           py="4"
@@ -28,7 +29,7 @@ export const Header = () => {
             <HStack spacing="8">
               <Box as="a" href="/" rel="home">
                 <VisuallyHidden>Indigenes</VisuallyHidden>
-                <Logo h="8" iconColor="yellow.400" />
+                <Logo h="8"  />
               </Box>
             </HStack>
             <Flex align="center">
@@ -38,17 +39,32 @@ export const Header = () => {
                   base: 'none',
                   md: 'flex',
                 }}
-              >
-                <NavLink.Desktop> Sign in </NavLink.Desktop>
+              > 
+              <a href="http://"><NavLink.Desktop > About </NavLink.Desktop></a>
+              <a href="http://"><NavLink.Desktop > Features </NavLink.Desktop></a>
+              <a href="http://"><NavLink.Desktop > Pricing </NavLink.Desktop></a>
+              <a href="http://"><NavLink.Desktop > Contact </NavLink.Desktop></a>
+              </HStack>
+              </Flex>
+              <Flex alignItems="center" justify="flex-end">
+              <HStack
+                spacing="5"
+                display={{
+                  base: "none",
+                  md: "flex",
+                }}>
+
+                  <NavLink.Desktop> Sign in </NavLink.Desktop>
                 <Button colorScheme="yellow" rounded="5" >
                   Sign up
                 </Button>
-              </HStack>
-              <Box ml="5">
+                </HStack>
+                
+                <Box ml="5">
                 <MobileNav />
               </Box>
+              </Flex>
             </Flex>
-          </Flex>
         </Box>
       </Box>
     </Box>

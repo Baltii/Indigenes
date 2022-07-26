@@ -113,7 +113,7 @@ export const MobileNav = () => {
         type="button"
         p="1"
         fontSize="2xl"
-        color="gray.600"
+        color="gray.800"
         onClick={toggle}
         display={{
           base: 'block',
@@ -165,19 +165,19 @@ export const MobileNav = () => {
                   sm: 2,
                 }}
               >
-                <NavLink.Mobile icon={HiCloudDownload}>Product</NavLink.Mobile>
-                <NavLink.Mobile icon={HiCurrencyDollar}>Pricing</NavLink.Mobile>
-                <NavLink.Mobile icon={HiBookOpen}>Resources</NavLink.Mobile>
-                <NavLink.Mobile icon={HiQuestionMarkCircle}>Help</NavLink.Mobile>
+                <NavLink.Mobile icon={HiCloudDownload}>About</NavLink.Mobile>
+                <NavLink.Mobile icon={HiCurrencyDollar}>Features</NavLink.Mobile>
+                <NavLink.Mobile icon={HiBookOpen}>Pricing</NavLink.Mobile>
+                <NavLink.Mobile icon={HiQuestionMarkCircle}>Contact us</NavLink.Mobile>
               </SimpleGrid>
               <VStack mt="8" spacing="4">
-                <Button w="full" colorScheme="yellow">
-                  Start Free Trial
+                <Button w="full" colorScheme="yellow" onClick={CloseEvent}>
+                  Sign in
                 </Button>
                 <Box textAlign="center" fontWeight="medium">
-                  Have an account?{' '}
-                  <Box as="a" color={mode('yellow.400', 'yellow.400')}>
-                    Log in
+                  Don't have an account?{' '}
+                  <Box as="a" color={mode('yellow.400', 'yellow.400')} href="#">
+                    Sign up
                   </Box>
                 </Box>
               </VStack>
