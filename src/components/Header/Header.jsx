@@ -7,6 +7,7 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react'
 import * as React from 'react'
+import { ColorModeSwitcher } from '../../ColorModeSwitcher'
 import { Logo } from './Logo'
 import { MobileNav } from './MobileNav'
 import { NavLink } from './NavLink'
@@ -63,6 +64,7 @@ export const Header = () => {
                 <Box ml="5">
                 <MobileNav />
               </Box>
+              <ColorModeSwitcher />
               </Flex>
             </Flex>
         </Box>

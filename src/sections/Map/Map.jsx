@@ -5,7 +5,7 @@ import Popup from 'reactjs-popup';
 
 const Map = () => {
   return (
-    <Box textAlign="center" bg={'blackAlpha.700'}>
+    <Box textAlign="center" bg={'dark'}>
             <Heading
               as="h1"
               size="3xl"
